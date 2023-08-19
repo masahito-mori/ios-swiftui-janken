@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            Spacer()
             if answerNumber == 0 {
                 Text("これからじゃんけんをします")
                     .padding(.bottom)
@@ -20,18 +21,21 @@ struct ContentView: View {
                 Image("gu")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                Spacer()
                 Text("グー")
                     .padding(.bottom)
             } else if answerNumber == 2 {
                 Image("choki")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                Spacer()
                 Text("チョキ")
                     .padding(.bottom)
             } else {
                 Image("pa")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                Spacer()
                 Text("パー")
                     .padding(.bottom)
             }
